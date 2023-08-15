@@ -23,14 +23,14 @@ export const Join = () => {
         </h3>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-24">
+      <div className="flex flex-col sm:flex-row gap-10">
         <motion.img
           initial={{ opacity: 0, y: 50 }}
           animate={inView1 ? animationOptions : {}}
           ref={ref1}
           src="/vitalik.png"
           alt="vitalik"
-          className="w-60 h-52 sm:w-72 sm:h-72"
+          className="w-48 h-48"
         />
         <motion.img
           initial={{ opacity: 0, y: 50 }}
@@ -38,7 +38,7 @@ export const Join = () => {
           ref={ref2}
           src="/brian.png"
           alt="brian"
-          className="w-60 h-52 sm:w-72 sm:h-72"
+          className="w-48 h-48"
         />
         <motion.img
           initial={{ opacity: 0, y: 50 }}
@@ -46,7 +46,7 @@ export const Join = () => {
           ref={ref3}
           src="/trump.png"
           alt="trump"
-          className="w-60 h-52 sm:w-72 sm:h-72"
+          className="w-48 h-48"
         />
       </div>
 

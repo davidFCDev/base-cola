@@ -11,14 +11,14 @@ export const About = () => {
   const [ref1, inView1] = useInView({ threshold: 0.6, triggerOnce: true });
   const [ref2, inView2] = useInView({ threshold: 0.6, triggerOnce: true });
   return (
-    <div className="w-full justify-center flex flex-col sm:flex-row gap-10 sm:gap-36 items-center p-10 sm:p-28">
+    <div className="w-full justify-center flex flex-col sm:flex-row gap-10 lg:gap-36 items-center p-10 sm:p-28">
       <motion.img
         initial={{ opacity: 0, y: 50 }}
         animate={inView1 ? animationOptions : {}}
         ref={ref1}
         src="/howTO.png"
         alt="prueba"
-        className="min-w-[350px] sm:w-[700px] shadow-lg rounded-2xl shadow-gray-300"
+        className="min-w-[350px] sm:min-w-[400px] lg:w-[700px] shadow-lg rounded-2xl shadow-gray-300"
       />
       <motion.div
         initial={{ opacity: 0, y: 50 }}

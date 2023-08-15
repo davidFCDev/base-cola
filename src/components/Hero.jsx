@@ -14,7 +14,7 @@ export const Hero = () => {
         <img
           src="/tweet.png"
           alt="Tweet"
-          className="shadow-sm rounded-md h-56"
+          className="shadow-sm rounded-md h-40 lg:h-56 w-64 lg:w-[450px]"
         />
         <img
           src="/public/lataCola.png"
