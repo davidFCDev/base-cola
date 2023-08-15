@@ -17,7 +17,7 @@ export const Hero = () => {
           className="shadow-sm rounded-md h-40 lg:h-56 w-64 lg:w-[450px]"
         />
         <img
-          src="/public/lataCola.png"
+          src="/lataCola.png"
           alt="Lata"
           className="w-96"
         />
