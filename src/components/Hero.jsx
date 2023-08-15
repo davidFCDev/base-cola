@@ -8,7 +8,7 @@ export const Hero = () => {
         <h3>The most refreshing meme on BASE</h3>
         <h3><span className="text-red-500">CocaCola</span> and <span className="text-primary">BASE</span> are the new alliance, will you join us?</h3>
       </div>
-      <div className="flex w-full justify-center m-5 gap-52 items-center">
+      <div className="flex w-full justify-center m-5 gap-16 items-center">
         <img
           src="/tweet.png"
           alt="Tweet"
