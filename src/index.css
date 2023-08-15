@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Caveat";
+
+  color-scheme: light dark;
+  background-color: #ffffff;
+}
+
+.page {
+  background-image: url("https://media.istockphoto.com/id/1264629597/es/foto/playa-de-arena-vac%C3%ADa-con-fondo-claro.jpg?s=612x612&w=0&k=20&c=z7GuLa7-8eUUZ5tGUZxIzHC0khFK-vMUAGiMD_MZqbI=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  font-family: "Barriecito";
+}
