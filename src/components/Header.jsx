@@ -4,7 +4,7 @@ export const Header = () => {
       <img src="/public/logoWeb.png" alt="Letra logos" className="w-56" />
       <div className="flex gap-10">
         <a
-          href="#"
+          href="https://t.me/basecolaentry"
           target="_blank"
           rel="noreferrer"
           className="hover:text-primary"
@@ -20,12 +20,12 @@ export const Header = () => {
           Twitter
         </a>
         <a
-          href="#"
+          href="https://dexscreener.com/base/0x76df39170d328c550cf0867f5a0fc1c12aa67b0d"
           target="_blank"
           rel="noreferrer"
           className="hover:text-primary"
         >
-          Telegram
+          Chart
         </a>
         <a
           href="https://chainlist.org/chain/8453"

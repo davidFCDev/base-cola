@@ -15,9 +15,9 @@ export const Hero = () => {
           className="shadow-sm rounded-md h-56"
         />
         <img
-          src="/latacola.png"
+          src="/public/lataCola.png"
           alt="Lata"
-          className="w-80 rounded-full shadow-xl hover:shadow-blue-300"
+          className="w-96"
         />
       </div>
     </div>
