@@ -1,8 +1,36 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export const About = () => {
+  const animationOptions1 = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2 },
+  };
+
+  const animationOptions2 = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2 },
+  };
+  const [ref1, inView1] = useInView({ threshold: 0.6, triggerOnce: true });
+  const [ref2, inView2] = useInView({ threshold: 0.6, triggerOnce: true });
   return (
     <div className="w-full justify-center flex gap-36 items-center p-28">
-      <img src="/public/howTO.png" alt="prueba" className="w-[700px] shadow-lg rounded-2xl shadow-gray-300" />
-      <div className="flex flex-col w-96 gap-4 items-start">
+      <motion.img
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView1 ? animationOptions1 : {}}
+        ref={ref1}
+        src="/public/howTO.png"
+        alt="prueba"
+        className="w-[700px] shadow-lg rounded-2xl shadow-gray-300"
+      />
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={inView2 ? animationOptions2 : {}}
+        ref={ref2}
+        className="flex flex-col w-96 gap-4 items-start"
+      >
         <h2 className="text-primary text-5xl title">How to Connect.</h2>
         <h3 className="tracking-widest flex flex-col gap-2 text-2xl">
           To join the family you need to add the new Base Network on your
@@ -30,7 +58,7 @@ export const About = () => {
         >
           Connect BASE
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

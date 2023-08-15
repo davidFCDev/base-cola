@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <header className="flex justify-around items-center p-4 text-3xl font-semibold">
-      <img src="/public/logoWeb.png" alt="Letra logos" className="w-56" />
+      <img src="/public/logoWeb.png" alt="Letra logos" className="w-56 hidden sm:block" />
       <div className="flex gap-10">
         <a
           href="https://t.me/basecolaentry"

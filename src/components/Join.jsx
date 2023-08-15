@@ -1,4 +1,17 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 export const Join = () => {
+  const animationOptions = {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.2 },
+  };
+
+  const [ref1, inView1] = useInView({ threshold: 0.6, triggerOnce: true });
+  const [ref2, inView2] = useInView({ threshold: 0.6, triggerOnce: true });
+  const [ref3, inView3] = useInView({ threshold: 0.6, triggerOnce: true });
+
   return (
     <div className="w-full justify-center flex flex-col gap-16 items-center p-28 text-center">
       <div className="flex flex-col gap-2">
@@ -11,9 +24,30 @@ export const Join = () => {
       </div>
 
       <div className="flex gap-24">
-        <img src="/public/vitalik.png" alt="vitalik" className="w-72 h-72" />
-        <img src="/public/brian.png" alt="brian" className="w-72 h-72" />
-        <img src="/public/trump.png" alt="trump" className="w-72 h-72" />
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView1 ? animationOptions : {}}
+          ref={ref1}
+          src="/vitalik.png"
+          alt="vitalik"
+          className="w-72 h-72"
+        />
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView2 ? animationOptions : {}}
+          ref={ref2}
+          src="/brian.png"
+          alt="brian"
+          className="w-72 h-72"
+        />
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView3 ? animationOptions : {}}
+          ref={ref3}
+          src="/trump.png"
+          alt="trump"
+          className="w-72 h-72"
+        />
       </div>
 
       <div className="flex gap-10">
@@ -21,7 +55,7 @@ export const Join = () => {
           href="https://t.me/basecolaentry"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-primary text-3xl font-bold"
+          className="hover:text-primary text-3xl font-bold animate-pulse"
         >
           Telegram
         </a>
@@ -29,7 +63,7 @@ export const Join = () => {
           href="https://twitter.com/BaseColaToken"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-primary text-3xl font-bold"
+          className="hover:text-primary text-3xl font-bold animate-pulse"
         >
           Twitter
         </a>

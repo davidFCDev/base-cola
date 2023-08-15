@@ -1,4 +1,6 @@
+
 export const Hero = () => {
+  
   return (
     <div className="w-full p-5 flex flex-col gap-8 items-center">
       <h1 className="text-primary text-7xl title">
