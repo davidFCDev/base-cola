@@ -23,7 +23,7 @@ export const Join = () => {
         </h3>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-10">
+      <div className="flex flex-col sm:flex-row gap-10 lg:gap-36">
         <motion.img
           initial={{ opacity: 0, y: 50 }}
           animate={inView1 ? animationOptions : {}}
