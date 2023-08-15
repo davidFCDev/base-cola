@@ -1,8 +1,8 @@
 export const Header = () => {
   return (
     <header className="flex justify-around items-center p-4 text-3xl font-semibold">
-      <img src="/public/logoWeb.png" alt="Letra logos" className="w-56 hidden sm:block" />
-      <div className="flex gap-10">
+      <img src="/logoWeb.png" alt="Letra logos" className="w-56 hidden sm:block" />
+      <div className="flex gap-4 sm:gap-10 text-lg sm:text-3xl ">
         <a
           href="https://t.me/basecolaentry"
           target="_blank"
@@ -39,7 +39,7 @@ export const Header = () => {
       <div>
         <a
           href="https://baseswap.fi/swap"
-          className="border-2 border-primary bg-primary text-white hover:bg-white hover:text-primary transition-all px-5 py-2 rounded-3xl"
+          className="text-xl sm:text-4xl border-2 border-primary bg-primary text-white hover:bg-white hover:text-primary transition-all px-3 sm:px-5 py-1 sm:py-2 rounded-3xl"
         >
           Trade Now
         </a>

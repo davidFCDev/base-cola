@@ -18,19 +18,19 @@ export const Join = () => {
         <h1 className="text-primary text-5xl title">
           Join <span className="text-red-600">US</span>!
         </h1>
-        <h3 className="tracking-widest flex flex-col text-3xl">
+        <h3 className="tracking-widest flex flex-col text-2xl sm:text-3xl">
           They are already with us. What are you waiting for?
         </h3>
       </div>
 
-      <div className="flex gap-24">
+      <div className="flex flex-col sm:flex-row gap-24">
         <motion.img
           initial={{ opacity: 0, y: 50 }}
           animate={inView1 ? animationOptions : {}}
           ref={ref1}
           src="/vitalik.png"
           alt="vitalik"
-          className="w-72 h-72"
+          className="w-60 h-52 sm:w-72 sm:h-72"
         />
         <motion.img
           initial={{ opacity: 0, y: 50 }}
@@ -38,7 +38,7 @@ export const Join = () => {
           ref={ref2}
           src="/brian.png"
           alt="brian"
-          className="w-72 h-72"
+          className="w-60 h-52 sm:w-72 sm:h-72"
         />
         <motion.img
           initial={{ opacity: 0, y: 50 }}
@@ -46,7 +46,7 @@ export const Join = () => {
           ref={ref3}
           src="/trump.png"
           alt="trump"
-          className="w-72 h-72"
+          className="w-60 h-52 sm:w-72 sm:h-72"
         />
       </div>
 

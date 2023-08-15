@@ -15,11 +15,11 @@ export const Description = () => {
   const [ref3, inView3] = useInView({ threshold: 0.6, triggerOnce: true });
   const [ref4, inView4] = useInView({ threshold: 0.6, triggerOnce: true });
   return (
-    <div className="w-full justify-center flex flex-col gap-16 items-center p-28">
-      <h1 className="text-primary text-5xl title">
+    <div className="w-full justify-center flex flex-col gap-16 items-center text-center p-10 sm:p-28">
+      <h1 className="text-primary text-4xl sm:text-5xl title">
         What's Base<span className="text-red-600">Cola</span>?
       </h1>
-      <div className="flex gap-5">
+      <div className="flex flex-col sm:flex-row gap-5">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView1 ? animationOptions : {}}
