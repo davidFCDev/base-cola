@@ -4,6 +4,7 @@ import { Description } from "./components/Description";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Join } from "./components/Join";
+import { Video } from "./components/Video";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <main>
         <Hero />
+        <Video />
         <About />
         <Description />
         <Join />
