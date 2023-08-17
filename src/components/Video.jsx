@@ -4,7 +4,7 @@ export const Video = () => {
       <h1 className="text-primary text-4xl sm:text-5xl title">
         Coinbase Onchain <span className="text-red-600">Summer</span>
       </h1>
-      <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl w-[70%]">
+      <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl w-[58%]">
         A multi-week celebration of onchain art, music, and more, powered by
         Base. Cocacola is bringing their Global Masterpiece campaign onchain
         with iconic works from leading artists, and we helped them with the special edition!
