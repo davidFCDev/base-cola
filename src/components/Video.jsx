@@ -13,7 +13,6 @@ export const Video = () => {
         <video
           className="w-full sm:w-[560px] rounded "
           autoPlay
-          controls
           loop
           muted
         >
