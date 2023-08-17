@@ -5,11 +5,11 @@ export const About = () => {
   const animationOptions = {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.2 },
+    transition: { duration: 1 },
   };
 
-  const [ref1, inView1] = useInView({ threshold: 0.6, triggerOnce: true });
-  const [ref2, inView2] = useInView({ threshold: 0.6, triggerOnce: true });
+  const [ref1, inView1] = useInView({ threshold: 0.2, triggerOnce: true });
+  const [ref2, inView2] = useInView({ threshold: 0.2, triggerOnce: true });
   return (
     <div className="w-full justify-center flex flex-col sm:flex-row gap-10 lg:gap-36 items-center p-10 sm:p-28">
       <motion.img
@@ -27,7 +27,7 @@ export const About = () => {
         className="flex flex-col w-96 gap-5 items-center sm:items-start p-6 sm:p-0"
       >
         <h2 className="text-primary text-4xl sm:text-5xl title">
-        <span className="text-red-600">How</span> to Connect.
+          <span className="text-red-600">How</span> to Connect.
         </h2>
         <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl">
           To join the family you need to add the new Base Network on your
