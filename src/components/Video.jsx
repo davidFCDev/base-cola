@@ -22,17 +22,17 @@ export const Video = () => {
           <img
             src="/coinbase.png"
             alt="Coinbase"
-            className="w-80 rounded shadow-sm shadow-gray-500 hover:scale-105 "
+            className="w-80 rounded shadow-sm shadow-gray-500 hover:shadow-gray-500 hover:shadow-md "
           />
           <img
             src="/onchain.png"
             alt="onchain"
-            className="w-80 rounded shadow-sm shadow-gray-500 hover:scale-105 "
+            className="w-80 rounded shadow-sm shadow-gray-500 hover:shadow-gray-500 hover:shadow-md "
           />
           <img
             src="/cocacola.png"
             alt="Cocacola"
-            className="w-80 rounded shadow-sm shadow-gray-500 hover:scale-105 "
+            className="w-80 rounded shadow-sm shadow-gray-500 hover:shadow-gray-500 hover:shadow-md "
           />
         </div>
       </div>
