@@ -27,7 +27,7 @@ export const About = () => {
         className="flex flex-col w-96 gap-5 items-center sm:items-start p-6 sm:p-0"
       >
         <h2 className="text-primary text-4xl sm:text-5xl title">
-          How to Connect.
+        <span className="text-red-600">How</span> to Connect.
         </h2>
         <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl">
           To join the family you need to add the new Base Network on your
