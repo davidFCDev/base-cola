@@ -51,21 +51,23 @@ export const Join = () => {
       </div>
 
       <div className="flex gap-10">
-        <a
-          href="https://t.me/basecolaentry"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-primary text-3xl font-bold animate-pulse"
-        >
-          Telegram
+        <a href="https://t.me/basecolaentry" target="_blank" rel="noreferrer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/480px-Telegram_logo.svg.png"
+            alt="telegram"
+            className="w-10 hover:scale-110 transition-all"
+          />
         </a>
         <a
           href="https://twitter.com/BaseColaToken"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-primary text-3xl font-bold animate-pulse"
         >
-          Twitter
+          <img
+            src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-vector-download_691560-10809.jpg?w=2000"
+            alt="twitter"
+            className="w-10 hover:scale-110 transition-all"
+          />
         </a>
       </div>
     </div>
