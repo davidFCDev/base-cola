@@ -24,7 +24,7 @@ export const Video = () => {
         special edition!
       </h3>
       <div className="flex flex-col sm:flex-row gap-10 w-full items-center justify-center">
-        <video className="w-[300px] sm:w-[560px] rounded " autoPlay loop muted>
+        <video className="w-[320px] sm:w-[560px] rounded " autoPlay loop muted>
           <source src="/COLA.mp4" type="video/mp4" />
         </video>
         <div className="flex flex-col gap-3">
@@ -34,7 +34,7 @@ export const Video = () => {
             ref={ref1}
             src="/coinbase.png"
             alt="Coinbase"
-            className="w-80 rounded shadow-sm shadow-gray-500 hover:shadow-gray-500 hover:shadow-md "
+            className="w-80 sm:w-80 rounded shadow-sm shadow-gray-500 hover:shadow-gray-500 hover:shadow-md "
           />
           <motion.img
             initial={{ opacity: 0, x: 50 }}
