@@ -17,14 +17,14 @@ export const Video = () => {
       <h1 className="text-primary text-4xl sm:text-5xl title">
         Coinbase Onchain <span className="text-red-600">Summer</span>
       </h1>
-      <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl w-[58%]">
+      <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl w-[75%] md:w-[58%]">
         A multi-week celebration of onchain art, music, and more, powered by
         Base. Cocacola is bringing their Global Masterpiece campaign onchain
         with iconic works from leading artists, and we helped them with the
         special edition!
       </h3>
       <div className="flex flex-col sm:flex-row gap-10 w-full items-center justify-center">
-        <video className="w-full sm:w-[560px] rounded " autoPlay loop muted>
+        <video className="w-[300px] sm:w-[560px] rounded " autoPlay loop muted>
           <source src="/COLA.mp4" type="video/mp4" />
         </video>
         <div className="flex flex-col gap-3">
