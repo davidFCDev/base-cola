@@ -46,26 +46,35 @@ const Home: NextPage = () => {
     <>
       <HeaderDapp />
       <div className='fondo min-h-screen'>
+        <div className="sm:hidden" ref={connectors} tabIndex={-1}>
+          <Web3Connectors />
+        </div>
         <main className='p-10'>
-          <div className='flex flex-col sm:flex-row justify-center items-center gap-16'>
+          <div className='flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-16'>
             <div className="flex flex-col justify-center items-center gap-3">
               <h2 className="text-3xl px-4 py-2 shadow-black text-primary bg-white font-semibold shadow rounded-lg">Vending Machine</h2>
-              <img src="/maquina.png" alt="maquina" className="w-60 sm:w-96" />
+              <img src="/maquina.png" alt="maquina" className="w-80 sm:w-96" />
             </div>
-            <img src='/toshi2-cola.png' alt="toshi2-cola" className="w-60 sm:w-72 fixed z-0 opacity-80 bottom-0 right-5" />
-            <img src='/mochi2-cola.png' alt="mochi2-cola" className="w-60 sm:w-96 fixed z-0 opacity-80 bottom-0 left-0" />
-            <div className={styles.widget}>
-              <SwapWidget
-                theme={theme}
-                jsonRpcEndpoint={JSON_RPC_URL}
-                tokenList={TOKEN_LIST}
-                provider={provider}
-                locale={locale}
-                onConnectWallet={focusConnectors}
-                defaultInputTokenAddress="NATIVE"
-                defaultInputAmount="1"
-                defaultOutputTokenAddress={UNI}
-              />
+            <img src='/toshi2-cola.png' alt="toshi2-cola" className="hidden small:w-72 fixed z-0 opacity-80 bottom-0 right-5" />
+            <img src='/mochi2-cola.png' alt="mochi2-cola" className="hidden small:w-96 fixed z-0 opacity-80 bottom-0 left-0" />
+            <div className='flex flex-col relative'>
+              <div className='flex justify-center items-end'>
+                <img src='/toshi2-cola.png' alt="toshi2-cola" className="w-36 z-0 opacity-80" />
+                <img src='/mochi2-cola.png' alt="mochi2-cola" className="w-44 z-0 opacity-80" />
+              </div>
+              <div className={`${styles.widget}`}>
+                <SwapWidget
+                  theme={theme}
+                  jsonRpcEndpoint={JSON_RPC_URL}
+                  tokenList={TOKEN_LIST}
+                  provider={provider}
+                  locale={locale}
+                  onConnectWallet={focusConnectors}
+                  defaultInputTokenAddress="NATIVE"
+                  defaultInputAmount="1"
+                  defaultOutputTokenAddress={UNI}
+                />
+              </div>
             </div>
           </div>
         </main>
