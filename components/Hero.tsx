@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="tracking-widest flex flex-col gap-2 text-center text-xl sm:text-2xl font-semibold">
         <h3>The most refreshing meme on BASE</h3>
         <h3><span className="text-red-500">CocaCola</span> and <span className="text-primary">BASE</span>,
-          come together to create the Brian's favorite drink</h3>
+          come together to create the Brian&apos;s favorite drink</h3>
       </div>
       <div className="flex flex-col sm:flex-row w-full justify-center gap-4 sm:gap-16 items-center">
 

@@ -7,7 +7,7 @@ export const Video = () => {
         Coinbase ft. <span className="text-red-600">Cocacola</span>
       </h1>
       <h3 className="tracking-widest flex flex-col gap-2 text-xl sm:text-2xl w-[85%] md:w-[58%]">
-        Two of the most important companies come together to bring the most refreshing meme. Brian's favorite drink is coming to revolutionize the crypto world. Don't miss the opportunity. Join us now!
+        Two of the most important companies come together to bring the most refreshing meme. Brian&apos;s favorite drink is coming to revolutionize the crypto world. Don&apos;t miss the opportunity. Join us now!
       </h3>
       <div className="flex flex-col sm:flex-row gap-10 w-full items-center justify-center">
         <video className="w-[320px] sm:w-[560px] rounded " autoPlay loop muted>
