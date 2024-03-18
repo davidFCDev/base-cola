@@ -6,7 +6,7 @@ export const Description = () => {
   return (
     <div className="w-full justify-center flex flex-col gap-16 items-center text-center p-10 sm:p-28 bg-gradient text-white">
       <h1 className="text-4xl sm:text-5xl title">
-        What's Base<span className="text-red-500">Cola</span>?
+        What&apos;s Base<span className="text-red-500">Cola</span>?
       </h1>
       <div className="flex flex-col sm:flex-row gap-5">
         <div
