@@ -12,7 +12,7 @@ export const Description = () => {
         <div
           className="flex flex-col gap-10 items-center p-3 text-center"
         >
-          <FaLayerGroup className="text-8xl shadow-md rounded-3xl p-5 text-primary bg-white" />
+          <FaLayerGroup className="text-8xl shadow-md rounded-3xl p-4 text-primary bg-white" />
           <div className="items-center flex flex-col">
             <h2 className="text-3xl font-bold ">Built on BASE</h2>
             <p className="text-2xl">
